@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Website SignIn</title>
+    <style>
+        body{
+            background-color: rgb(247, 244, 245);
+        }
+        label{
+            color: black;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            margin-left: 23%;
+        }
+        input{
+            padding: 10px 60px;
+            background-color: aliceblue;
+            margin-left: 20%;
+            border-radius: 15px;
+
+        }
+        .form1 input::placeholder{
+            font-size: 14px;
+            font-weight: 650;
+            font-style: italic;
+        }
+        input:hover{
+            background-color: beige;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img{
+            width: 15px;
+            height: 15px;
+            display: inline;
+        }
+        h2{
+            position: absolute;
+            top: 0;
+        }
+        nav{
+            margin-top: 1%;
+        }
+        nav a{
+            text-decoration: none;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 800;
+            color: blue;
+            border: 2px solid lavender;
+            padding: 5px 50px;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+        nav a:hover{
+            background-image: linear-gradient(to top left, lightgreen, lightcyan, yellow); 
+        }
+        .home label{
+            margin-left: 2%;
+        }
+        .home input{
+            margin-left: 22%;
+        }
+        .com label{
+            margin-left: 2%;
+        }
+        .com input{
+            margin-left: 22%;
+        }
+        .pride label{
+            margin-left: 2%;
+        }
+        .pride input{
+            margin-left: 22%;
+        }
+        button{
+            background-color: aliceblue;
+            color: blue;
+            padding: 5px 80px;
+            font-size: 21px;
+            font-weight: 700;
+            border-radius: 15px;
+            transition: all 1.5s ease;
+            margin-bottom: 2%;
+            margin-left: 80%;
+        }
+        button a{
+            text-decoration: none;
+            font-size: 25px;
+        }
+        button:hover{
+            background-image: linear-gradient(to top left, lightgreen, lightcyan, yellow);
+            cursor: pointer;
+        }
+
+          /* Responsiv Design Starts */
+
+          @media(max-width: 500px) {
+           
+           header{
+               display: flex;
+               flex-direction: column;
+           }
+           .logo{
+            margin-left: 3%;
+           }
+           nav{
+               display: flex;
+               flex-direction: column;
+               margin-top: 10%;
+               gap: 5px;
+               margin-bottom: 2%;
+           }
+           nav a{
+            text-align: center;
+           }
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <h2><span style="color: blue; font-size: 30px;" >M</span><span style="color: red; font-size: 30px;">F</span><span style="color: blue; font-size: 30px;">S</span></h2>
+        </div>
+        <nav>
+            <a href="./Home.html">Home</a>
+            <a href="./interface.html">Interface</a>
+        </nav>
+    </header>
+   <div class="form1">
+    <label for="">Enter your Name</label><br>
+    <input type="text" placeholder="Enter your full name"> <br><br>
+    <label for="">Enter Email</label><br>
+    <input type="text" placeholder="Enter Email address"> <br><br>
+    <label for="">Enter Phone number</label><br>
+    <input type="text" placeholder="Enter Phone number"> <br><br>
+    <label for="">Date of Birth</label><br>
+    <input type="text" placeholder="DOB"> <br><br>
+    <label for="">Age</label><br>
+    <input type="text" placeholder="Age">  <br><br>
+    <label for="">State of Origin</label><br>
+    <input type="text" placeholder="Enter state">  <br><br>
+    <label for="">Enter Local Government</label><br>
+    <input type="text" placeholder="Enter LGA">  <br><br>
+    <label for="">Enter Religion</label><br>
+    <input type="text" placeholder="Religion">  <br><br>
+    <label for="">Enter Occupation</label><br>
+    <input type="text" placeholder="Occupation">  <br><br>
+    <label for="">Enter home Address</label><br>
+    <input type="text" placeholder="Enter home Address"> <br><br>
+
+  
+
+
+
+
+
+    <label for="text">Select Gender</label><br><br>
+    <form class="home">
+        <input type="radio" value="male" name="gender" id="male">
+        <label for="male">Male</label><br><br>
+        <input type="radio" value="female" name="gender" id="female">
+        <label for="female">Female</label><br><br>
+    </form>
+
+    <label for="text">Whats your purpose</label><br><br>
+    <form class="com">
+        <input type="radio" value="Order" name="language" id="Order">
+    <label for="Order">Order</label><br><br>
+    <input type="radio" value="Sale" name="language" id="Sale">
+    <label for="Sale">Sale</label><br><br>
+    </form>
+
+    <label for="text">Select your Language</label><br><br>
+        <form class="pride">
+            <input type="checkbox" name="language" id="French" value="lauguage1">
+            <label for="French">French</label> <br><br>
+            <input type="checkbox" name="language" id="spanish" value="language2">
+            <label for="spanish">Spanish</label> <br><br>
+            <input type="checkbox" name="language" id="english" value="language3">
+            <label for="english">English</label> <br><br>
+            <input type="checkbox" name="language" id="german" value="language4">
+            <label for="german">German</label> <br><br>
+            <input type="checkbox" name="language" id="greek" value="language5">
+            <label for="greek">Greek</label> <br><br>
+            <input type="checkbox" name="language" id="italian" value="language6">
+            <label for="italian">Italian</label> <br><br>
+         </form>
+        </div>
+         <button><a href="./Submitpage.html">Submit</a></button>
+       
+</body>
+</html>

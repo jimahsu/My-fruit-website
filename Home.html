@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Fruit website Home</title>
+    <style>
+        body{
+            background-color: rgb(247, 244, 245);
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img{
+            width: 15px;
+            height: 15px;
+            display: inline;
+            
+        }
+        h2{
+            position: absolute;
+            top: 0;
+        }
+        nav{
+            margin-top: 1%;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: blue;
+            border: 2px solid lavender;
+            padding: 5px 50px;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+        nav a:hover{
+            background-image: linear-gradient(to top left, lightgreen, lightcyan, yellow);
+
+            
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            width: 95%;
+            height: 50vh;
+            background-color: white;
+            border: 2px solid lavender;
+            margin-left: 1%;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px;
+            text-align: justify;
+            margin-top: 1%;
+        }
+        .left img{
+            width: 500px;
+            height: 300px;
+            border-radius: 0%;
+            margin-top: 1%;
+            margin-right: 1%;
+          
+        }
+        h3{
+            font-size: 40px;
+            color: red;
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .new img{
+            width: 400px;
+            height: 250px;
+            display: inline;
+            border-radius: 0%;
+            margin-right: 2%;
+            margin-top: 2%;
+           
+        }
+        .right{
+            width: 98%;
+            height: 85vh;
+            display: flex;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        button{
+            align-items: center;
+            padding: 10px 40px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 43%;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 6px;
+            width: 70vw;
+            margin: auto;
+            margin-top: 3%;
+            padding: 10px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            float: right;
+            border-radius: 50%;
+        }
+        .fruits{
+            width: 310px;
+            height: 310px;
+            cursor: pointer;
+            transition: all 1.5s ease;
+            border: 2px solid lavender;
+            background-color: rgba(162, 245, 217, 0.658);
+            gap: 5px;
+            row-gap: 10px;
+        }
+        .fruits:hover{
+            transform: scale(1.1);
+        }
+        h2{
+            color: red;
+            text-align: center;
+            font-weight: 600;
+        }
+        .bluebox{
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(162, 245, 217, 0.658);
+        }
+        .bluebox a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+            margin-left:1%;
+            margin-top: 5%;
+        }
+        .bluebox i{
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        b{
+            font-size: 30px;
+            font-weight: 700;
+            color: red;
+            margin-left: 20%;
+        }
+        .textbox{
+            display: flex;
+            color: white;
+            width: 600px;
+            height: 300px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 1%;
+        }
+
+        .greybox img{
+            width: 400px;
+            height: 250px;
+            border-radius: 0%;
+            margin-top: 1%;
+            display: inline;
+            margin-right: 2%;
+            margin-bottom: 3%;
+        }
+        ul{
+            list-style: none;
+        }
+        .first{
+            width: 98%;
+            height: 50vh;
+            background-color: white;
+            border: 2px solid lavender;
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .first img{
+            border-radius: 0%;
+            width: 500px;
+            height: 300px;
+        }
+        .btn{
+            padding: 5px 40px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            margin-left: 85%;
+        }
+        .btn a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            color: blue;
+        }
+        .btn:hover{
+            background-image: linear-gradient(to top left, lightgreen, lightcyan, yellow);
+
+        }
+
+            /* Responsive Design Starts */
+
+        @media(max-width: 500px) {
+           
+            header{
+                display: flex;
+                flex-direction: column;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                margin-top: 8%;
+            }
+            .gallery{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                min-width: 200px;
+            }
+            .left{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .left img{
+                width: 200px;
+                height: 100px;
+            }
+            p{
+                display: flex; 
+            }
+            .first{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-width: 200px;
+
+            }
+            .first img{
+                max-width: 200px;
+                height: 100px;
+                margin-top: 5%;
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-width: 200px;
+            }
+            .bluebox{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-width: 200px;
+            }
+            .blue p{
+                display: flex;
+                flex-direction: column;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                font-size: 5px;
+            }
+            .btn{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                margin-top: 3%;
+            }
+            .left h3{
+                font-size: 30px;
+            }
+            .zec{
+                margin-left: 30%;
+             }
+             .zip{
+                margin-left: 30%;
+                margin-bottom: 20%;
+             }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <h2><span style="color: blue; font-size: 30px;" >M</span><span style="color: red; font-size: 30px;">F</span><span style="color: blue; font-size: 30px;">S</span></h2>
+        </div>
+        <nav>
+            <a href="./interface.html">Interface</a>
+            <a href="./signin.html">SignIn</a>
+        </nav>
+    </header>
+    <div class="gallery">
+        <div class="apple fruits">
+            <img src="./fruit pictures/Apple1.jpg" alt="" >
+            <p>
+                <span><b>Apple</b></span>
+                <ul>
+                    <li>May support weight loss
+                        Apples are high in fiber and water, which makes them filling.
+                        
+                        In one studyTrusted Source, eating whole apples increased fullness more than consuming equal amounts of apple juice. This may happen because whole apples reduce gastric emptying — the rate at which your stomach empties.
+                        
+                        ResearchTrusted Source also suggests apple intake may significantly reduce Body Mass Index (BMI), a weight-related risk factor for heart disease.
+                    </li>
+                    
+                </ul>
+            </p><br><br><br><br><br>
+        </div>
+        <div class="lemon fruits">
+            <img src="./fruit pictures/Lemon.jpeg" alt="">
+            <p>
+               <span><b>Lemon</b></span>
+                <ul>
+                    <li>Support heart health
+                        Lemons are a good source of vitamin C. One peeled lemon provides about 53 mg of vitamin C, which is almost 60%Trusted Source of the reference daily intake (RDI).
+                        
+                        Research shows that eating fruits and vegetables rich in vitamin C reduces your riskTrusted Source of heart disease and stroke.
+                    </li>
+                </ul>
+            </p><br><br><br><br><br>
+        </div>
+        <div class="avacado fruits">
+            <img src="./fruit pictures/Avacado1.jpg" alt="">
+            <p>
+                <span><b>Avacado</b></span>
+                <ul>
+                </li>
+                <li>As you can see, avocados are exceptionally nutritious fruits and are a concentrated source of healthy fats and fiber, plus a number of vitamins and minerals.
+                    
+                    They’re rich in nutrients that are often lacking in many people’s diets, including magnesium, B6, vitamin C, vitamin E, and folate.
+                </ul>
+            </p><br><br><br><br><br>
+        </div>
+        <div class="mango fruits">
+            <img src="./fruit pictures/mango.jpeg" alt="">
+            <p>
+                <span><b>Mango</b></span>
+                <ul>
+                    <li>Reduced Cancer Risk
+                        You should make foods with lots of antioxidants a part of your daily diet because they reduce the risk of cancer. Mangos also have a ton of antioxidants in them that can reduce your risk of getting cancer. They are especially good for keeping away colon and breast cancer. The main contributor that gives mangos this quality is beta-carotene. Not only will this antioxidant fortify your body against breast and colon cancer but leukemia as well.
+                    </li>
+                </ul>
+            </p><br><br><br><br><br>
+        </div>
+        <div class="banana fruits">
+            <img src="./fruit pictures/Banana1.jpg" alt="">
+            <p>
+                <span><b>Banana</b></span>
+                <ul>
+                    <li>Rich in nutrients
+                        Bananas contain a fair amount of carbs, water, fiber, and antioxidants but little protein and no fat.
+                    </li>
+                    <li>May improve blood sugar levels
+                        Bananas are rich in soluble fiber. During digestion, soluble fiber dissolves in liquid to form a gel. This may also contribute to a banana’s sponge-like textureTrusted Source.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="orange fruits">
+                <img src="./fruit pictures/Orange.jpeg" alt="">
+                <p>
+                    <span><b>Orange</b></span>
+                    <ul>
+                        <li>Enhances Sexual Performance
+                            Oranges may have mild aphrodisiac properties which can be used to enhance sexual performance in both males and females. When used regularly, it may be able to put a stop to sexual problems like erectile dysfunction and decreased libido from affecting your sex life. Oranges may also increase the secretion of the sex hormones and improve sex drive and erection potency, all playing favorably to enhancing sex life.
+                        </li>
+                    </ul>
+                </p><br><br><br><br><br>
+            </div>
+            <div class="grape fruits">
+            <img src="./fruit pictures/Grape1.jpg" alt="">
+            <p>
+                <span><b>Grape</b></span>
+                <ul>
+                    <li>May help reduce cholesterol
+                        Compounds found in grapes may help protect against high cholesterol levels by decreasing cholesterol absorption (10).
+                    </li>
+                    <li>May help reduce cholesterol
+                        Compounds found in grapes may help protect against high cholesterol levels by decreasing cholesterol absorption (10).
+                        
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="pawpaw fruits">
+            <img src="./fruit pictures/pawpaw.jpeg" alt="">
+            <p>
+                <span><b>Pawpaw</b></span>
+                <ul>
+                    <li>Digestion
+                        Papaya is high in fiber and water content, which help prevent constipation and promote regularity and a healthy digestive tract.
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="guava fruits">
+            <img src="./fruit pictures/Guava1.jpg" alt="">
+            <p>
+                <span><b>Guava</b></span>
+                <ul>
+                    <li>ay Aid Weight Loss
+                        Guavas are a weight-loss-friendly food.
+                        
+                        With only 37 calories in one fruit and 12% of your recommended daily fiber intake, they are a filling, low-calorie snack (13).
+                        
+                        Unlike some other low-calorie snacks, they are packed with vitamins and minerals — so you aren’t losing out on important nutrients.</li>
+                </ul>
+            </p>
+        </div><br><br><br>
+          
+    </div>
+    <div class="left">
+            <img src="./fruit pictures/Fruitback4.jpg" alt="" class="left img">
+            <h3>Start Eating Much <br> Fruits and Veggies</h3>
+            <p>
+                Fruits are a great source of vitamins and minerals. You won’t find <br>  a better nutritional source than fruits, which are packed with <br> vitamins A, C and E, as well as magnesium, zinc, phosphorous <br> and folic acid. For potassium, one of the most important minerals for your <br> health, eat plenty of avocados, berries, bananas, prunes <br> and even tomato paste puree. 
+            </p>
+    </div><br>
+    <div class="new">
+        <img src="./fruit pictures/Fruitback2.jpg" alt="">
+        <img src="./fruit pictures/Fruitback5.jpg" alt="">
+        <img src="./fruit pictures/Fruitback2.jpg" alt="">
+    </div>
+    
+    
+    
+    <button class="zec">
+        <span style="color: blue; font-size: 30px;" >M</span><span style="color: red; font-size: 30px;">F</span><span style="color: blue; font-size: 30px;">S</span>
+    </button>
+    <div class="first">
+        <img src="./fruit pictures/Veg2.jpeg" alt="" class="first img">
+        <h3>Add More Vegetables <br> To Your Meal</h3>
+        <p>
+            Vegetables are also great source of vitamins and minerals. You can’t find <br>  a better nutritional source than veggies, which are packed with <br> vitamins A, C and E, as well as magnesium, zinc, phosphorous <br> and folic acid. For potassium, one of the most important minerals for your <br> health, eat plenty of sweet potatoes and even tomato paste puree. 
+        </p>
+
+    </div><br><br><br>
+    <button class="zip">
+        <span style="color: blue; font-size: 30px;" >M</span><span style="color: red; font-size: 30px;">F</span><span style="color: blue; font-size: 30px;">S</span>
+    </button>
+    <div class="greybox">
+        <img src="./fruit pictures/Veg2.jpeg" alt="">
+        <img src="./fruit pictures/Veg1.jpeg" alt="">
+        <img src="./fruit pictures/Veg3.jpeg" alt="">
+    </div><br><br>
+
+    <div class="right">
+        <div>
+            <h3 style="color: black; font-size: 30px; font-weight: 700; text-align: center; color: red;">ADVANTAGES OF FRUITS</h3>
+            <p>
+    <ul>
+        <li>Fruits and vegetables are a great source of vitamins and minerals. You won’t find   a better nutritional source than fruits and veggies, which are packed with  vitamins A, C and E, as well as magnesium, zinc, phosphorous  and folic acid. For potassium, one of the most important minerals for your  health, eat plenty of avocados, sweet potatoes, bananas, prunes  and even tomato paste puree. <br>
+        </li>
+        <li> You get to enjoy a variety of flavors and textures. With all their unique and interesting flavors, plant-based foods let you get creative in the kitchen.  You can try strong flavors like onions, olives and peppers, or milder options such as mushrooms and corn. For sweet flavors, fruits like pineapple, grapes or plums are great, while lemons and grapefruits are more sour. <br>
+        </li>
+        <li>
+            Lots and lots of fiber. Most fruits and vegetables have plenty of fiber to fill you up and boost gut health, but some have more than others. Fiber-rich vegetables include artichokes, green peas, broccoli and cauliflower. High-fiber fruits include raspberries, pears, apples and pumpkin.
+        </li>
+        <li>They’re low-calorie and low-fat. On average, fruits and especially vegetables are very low in calories and fat, which means you can eat more to keep you feeling full without worrying about extra calories or fat. You can save more than  200 calories by eating half a cup of grapes versus a fourth of a cup of  M&Ms. That said, there are exceptions, such as avocados, olives and coconuts.
+        </li>
+        <li>Protect against cancer and other diseases. Many vegetables and fruits contain phytochemicals, which are biologically active substances that can help protect against some diseases. That means you can lower your risk of type 2 diabetes, stroke, heart disease, high blood pressure and cancer by adding them into your diet. Specifically cruciferous veggies, such as broccoli, cabbage, collards and watercress, have been linked to reducing cancer risks.
+        </li>
+        <li>Fruits and vegetables help you maintain good health. Because they’re low in saturated fat, salt and sugar, fruits and vegetables are part of a well-balanced diet that can help you lose weight or prevent weight gain. Plus, they can help you decrease inflammation, and lower cholesterol levels and blood pressure.
+        </li>
+        <li> Low in sodium and cholesterol. Fresh fruits and veggies contain only trace amounts of sodium. Many people think that celery is high in sodium, but in fact, one stalk contains a mere 30mg, which contributes 1 percent to the recommended daily value. Cholesterol doesn’t exist in fruits and veggies at all.
+        </li>
+        <li>Fresh, frozen, canned, dried – they’re ALL nutritious. While eating fresh fruits and vegetables may be your preference, there’s not much difference from a nutrition standpoint when you compare frozen, canned or dehydrated products. In fact, most frozen and canned products are processed within hours of harvest, so the nutritional value is locked in quickly.
+        </li>
+        <li> Convenient, quick and easy. Unlike granola bars or crackers, many fruits and vegetables don’t need any packaging. So you can easily grab a banana or an apple as you’re heading out the door.
+        </li>
+        <li>Finally… Smoothies! If you have a blender, all you need is fruit and ice to whip up a delicious smoothie using all of your favorite flavors. And here’s a tip – when you make a fruit smoothie, feel free to throw in as much fresh spinach as you like. Spinach doesn’t start to taste like “spinach” until you cook it. Even kids can’t tell the difference!
+        </li>
+    </ul>  
+     </p>
+        </div>
+    </div><br>
+
+
+    <div class="bluebox">
+        
+            <i class="fa-brands fa-facebook"></i><a href="#">www.Mimifruits.com</a><br>
+        <i class="fa-brands fa-whatsapp"></i><a href="#">+234 706 0430 103</a><br>
+        <i class="fa-brands fa-telegram"></i><a href="#">+234 706 0430 103</a><br>
+        <i class="fa-regular fa-envelope"></i><a href="https/mimigodwin403@gmail.com">mimigodwin403@gmail.com</a><br><br>
+         <div class="textbox">
+        <p style="color: black;">
+            Mimi Fruits Stores provides all sorts of fruits and vegetable to help and keep your body and soul healthy.
+            We also make sure that orders are well delivered to  clients irrespective of class.
+            Mimi Fruits Stores has now added to list body counselling and  tests, fruit market and more. 
+         </p>
+       </div>
+    </div>
+
+    <button class="btn">
+        <a href="#">Scroll to top</a>
+    </button>
+
+</body>
+</html>

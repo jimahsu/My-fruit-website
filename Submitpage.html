@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Website Submit</title>
+    <style>
+         body{
+            background-color: rgb(247, 244, 245);
+        }
+        header{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+            display: inline;
+            
+        }
+        h2{
+            position: absolute;
+            top: 0;
+        }
+        nav{
+            margin-top: 1%;
+        }
+        nav a{
+            text-decoration: none;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 800;
+            color: blue;
+            border: 2px solid lavender;
+            padding: 5px 50px;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+        nav a:hover{
+            background-image: linear-gradient(to top left, lightgreen, lightcyan, yellow);
+
+        }
+        h3{
+            text-align: center;
+            font-size: 100px;
+            margin-top: 8%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        p{
+            text-align: center;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+       
+      /* Responsiv Design Starts */
+
+      @media(max-width: 500px) {
+           
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        .logo{
+            margin-left: 40%;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            gap: 5px;
+            margin-bottom: 2%;
+        }
+        nav a{
+            text-align: center;
+        }
+        .textbox h3{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .textbox p{
+            font-weight: 700;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+     <header>
+        <div class="logo">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <img src="./fruit pictures/Veg3.jpeg" alt="">
+            <h2><span style="color: blue; font-size: 30px;" >M</span><span style="color: red; font-size: 30px;">F</span><span style="color: blue; font-size: 30px;">S</span></h2>
+        </div>
+
+        <nav>
+            <a href="./Home.html">Home</a>
+            <a href="./signin.html">SignIn</a>
+        </nav>
+     </header>  
+
+     <div class="textbox">
+        <h3><b>THANK YOU FOR <br> SUBMITTING</b></h3>
+        <P>
+            <b>Our support team will get <br> back to you as soon as possible </b>
+        </P>
+     </div>
+</body>
+</html>
